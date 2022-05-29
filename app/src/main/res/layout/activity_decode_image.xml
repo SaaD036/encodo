@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DecodeImage"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:src="@mipmap/cover">
+    </ImageView>
+    <ImageView
+        android:id="@+id/decodeImage_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/decodeImage_passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/input"
+            android:padding="5dp"
+            android:drawableRight="@drawable/password"
+            android:inputType="textPassword"
+
+            android:hint="Password"
+            android:textColor="@color/skyBlue"
+            android:textColorHint="@color/skyBlue"
+            android:textSize="15dp">
+        </EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="bottom">
+            <Button
+                android:id="@+id/decodeImage_decodeButton"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+
+                android:text="Decode"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="15dp">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:gravity="center">
+            <Button
+                android:id="@+id/decodeImage_selectButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@drawable/button"
+                android:layout_marginRight="30dp"
+
+                android:text="Select Image"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textAllCaps="false">
+            </Button>
+            <Button
+                android:id="@+id/decodeImage_saveButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@drawable/button"
+
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textAllCaps="false">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:src="@mipmap/saad_icon"
+        android:layout_margin="15dp">
+    </ImageView>
+
+</LinearLayout>
